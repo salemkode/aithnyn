@@ -1,25 +1,47 @@
 * {
-    margin: 0;
-    box-sizing: border-box;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background: url(./wallpaper.jpg);
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background: url(./wallpaper.jpg) no-repeat;
+  background-size: cover;
 }
 
-.center { 
-    position: fixed;
-    left: 48%;
-    top: 48%;
-    transform: translate(-50%, -50%);
+.center {
+  position: fixed;
+  top: 48%;
+  transform: translateY(-50%);
+  width: 100%;
 }
 
-.logo { 
-
-    max-width: 70%;
+.logo {
+  max-width: 70%;
 }
 
 footer a {
+  color: white;
+  text-decoration: none;
+}
+
+@media (max-width: 425px) {
+  .logo {
+    max-width: 90%;
+  }
+  footer a.fa {
     color: white;
     text-decoration: none;
+    font-size: 2.8rem !important;
+  }
+}
+
+@media (max-width: 300px) {
+  footer a.fa {
+    color: white;
+    text-decoration: none;
+    font-size: 2.4rem !important;
+  }
 }
