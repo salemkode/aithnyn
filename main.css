@@ -27,6 +27,17 @@ footer a {
   text-decoration: none;
 }
 
+@media (max-width: 600px) {
+  .logo {
+    max-width: 75%;
+  }
+  footer a.fa {
+    color: white;
+    text-decoration: none;
+    font-size: 3rem !important;
+  }
+}
+
 @media (max-width: 425px) {
   .logo {
     max-width: 90%;
