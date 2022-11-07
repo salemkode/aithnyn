@@ -4,15 +4,22 @@
 }
 
 body {
-    background-color: black;
+    background: url(./wallpaper.jpg);
+}
+
+.center { 
+    position: fixed;
+    left: 48%;
+    top: 48%;
+    transform: translate(-50%, -50%);
 }
 
 .logo { 
 
     max-width: 70%;
-    position: fixed;
-    left: 48%;
-    top: 48%;
-    transform: translate(-50%, -50%);
+}
 
+footer a {
+    color: white;
+    text-decoration: none;
 }
